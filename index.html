@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive Form Elements</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://everythingfonts.com/font/face/XxV49XlRtOqzzVnvYctHXweF"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="./responsive.css"
+    />
+  </head>
+  <body>
+    <video autoplay loop id="video">
+      <source src="./media/city.mp4" type="video/mp4" id="videoSrc" />
+    </video>
+    <header>
+      find the destination by<br /><span>answering</span>
+      the
+      <span>questions</span>
+      of
+      <select id="dataset">
+        <option value="1"> dataset 1 </option>
+        <option value="2"> dataset 2 </option>
+      </select>
+    </header>
+    <section></section>
+    <main></main>
+    <div class="information">
+      <div class="container" id="information">
+        <form id="form">
+          <div class="wrapper">
+            <label>Name</label>
+            <br />
+            <input type="text" name="name" value="" id="name" required />
+          </div>
+          <br />
+          <div class="wrapper" id="wrapper">
+            <label>Email</label>
+            <br />
+            <input type="text" name="email" value="" id="email" required />
+          </div>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      favorite destinations<br />
+      <ul id="list"></ul>
+    </footer>
+    <script src="./browserDetect.js"></script>
+    <script>
+      function initDetect() {
+        if (
+          BrowserDetect.browser === "Explorer" &&
+          BrowserDetect.version <= 10
+        ) {
+          var body = document.body;
+          while (body.firstChild) body.removeChild(body.firstChild);
+          body.appendChild(
+            document.createTextNode("This browser is not supported")
+          );
+        }
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

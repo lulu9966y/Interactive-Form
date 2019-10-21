@@ -1,0 +1,28 @@
+header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "STIXGeneralRegular";
+  font-style: italic;
+  line-height: 1.1;
+  color: white;
+  width: 80%;
+}
+
+main {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.group label {
+  font-family: "Nexa";
+  font-weight: 700;
+  font-size: 10vw;
+  color: white;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}

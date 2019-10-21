@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  background-size: cover;
+}
+
+a {
+  font-family: "STIXGeneralRegular";
+  font-style: normal;
+  line-height: 1.1;
+  color: white;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "NexaBold";
+  src: url(./fonts/Nexa\Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NexaLight";
+  src: url(./fonts/Nexa\Light.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+#video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -100;
+}
+
+header {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  font-family: "STIXGeneralRegular";
+  font-style: italic;
+  line-height: 1.1;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 12%;
+  left: 25%;
+  font-family: "STIXGeneralRegular";
+  font-style: italic;
+  line-height: 1.1;
+  color: white;
+}
+
+header span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header select {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: "STIXGeneralRegular";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+header option {
+  color: black;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  max-width: 900px;
+}
+
+section {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 30vw;
+}
+
+section img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.group {
+  z-index: 100;
+}
+
+.result {
+  position: absolute;
+  font-family: "NexaBold";
+  font-weight: 700;
+  font-size: 5vw;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  top: 10vw;
+  left: 15vw;
+  text-decoration: none;
+  width: 60vw;
+  z-index: 101;
+}
+
+.group label {
+  font-family: "NexaBold";
+  font-weight: 700;
+  font-size: 3.2vw;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.group select {
+  display: block;
+  margin-top: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  width: 50%;
+  font-family: "NexaLight";
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+  line-height: 1.2;
+  outline: none;
+}
+
+.group option {
+  color: black;
+}
+
+.group:hover {
+  opacity: 1;
+}
+
+.container {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  z-index: 100000;
+}
+
+.wrapper label {
+  font-family: "NexaBold";
+  font-weight: 700;
+  font-size: 3.2vw;
+  color: black;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.wrapper input {
+  margin-top: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  width: 100%;
+  font-family: "NexaLight";
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: black;
+  line-height: 1.2;
+  outline: none;
+}
+
+.submit {
+  margin-top: 6rem;
+  font-family: "NexaBold";
+  font-weight: 700;
+  font-size: 1vw;
+  color: black;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  border: 2px solid black;
+  padding: 2px 8px;
+  background: transparent;
+  outline: none;
+}
